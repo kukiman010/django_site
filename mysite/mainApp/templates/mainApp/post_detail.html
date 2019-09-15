@@ -1,0 +1,15 @@
+{% extends 'mainApp/basic.html' %}
+
+{% block titel%}
+    {{post.titel}} - {{block.super}}
+{% endblock %}
+
+
+{% block content %}
+    <h1 class="mt-5">
+        {{post.titel}}
+    </h1>
+    <p>
+        {{post.body}}
+    </p>
+{% endblock %}

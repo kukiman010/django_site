@@ -1,0 +1,12 @@
+{% extends 'mainApp/basic.html' %}
+
+{% block titel %}
+    Block engine
+{% endblock %}
+
+{% block content %}
+    <h1 class="mb-5">Postrs: </h1>
+    {% for post in posts %}
+        {% include 'mainApp/includes/post_card_templ.html' %}
+    {% endfor %}
+{% endblock %}
